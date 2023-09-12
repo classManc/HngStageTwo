@@ -33,6 +33,14 @@ A Restful API that can perfom CRUD operations an a Person resource.
 }
 ```
 
+**Response Format (Error(if you provide an existing name)(- Status Code: 400)):**
+
+```json
+{
+  "name":"person with this name already exists.",
+}
+```
+
 
 ### Endpoint 2: Get a Person by ID
 
@@ -104,6 +112,14 @@ A Restful API that can perfom CRUD operations an a Person resource.
 }
 ```
 
+**Response Format (Error(if you provide an existing name)(- Status Code: 400)):**
+
+```json
+{
+  "name":"person with this name already exists.",
+}
+```
+
 
 
 ### Endpoint 4: Patch a Person by ID
@@ -144,6 +160,14 @@ A Restful API that can perfom CRUD operations an a Person resource.
 ```json
 {
   "name":"Only alphabetic characters are allowed in the name field.",
+}
+```
+
+**Response Format (Error(if you provide an existing name)(- Status Code: 400)):**
+
+```json
+{
+  "name":"person with this name already exists.",
 }
 ```
 

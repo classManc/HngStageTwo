@@ -21,7 +21,7 @@ from drf_yasg.views import get_schema_view
 from rest_framework import permissions
 
 
-# register your Note views and endpoints here
+#register your Note views and endpoints here
 
 schema_view = get_schema_view(
     openapi.Info(
