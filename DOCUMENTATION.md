@@ -25,6 +25,14 @@ A Restful API that can perfom CRUD operations an a Person resource.
 }
 ```
 
+**Response Format (Error(if you provide an integer or any other datatype as a value for the mame field other than a string(alphabet))(- Status Code: 400)):**
+
+```json
+{
+  "name":"Only alphabetic characters are allowed in the name field.",
+}
+```
+
 
 ### Endpoint 2: Get a Person by ID
 
@@ -44,6 +52,15 @@ A Restful API that can perfom CRUD operations an a Person resource.
   "name": "John Doe" // The name of the person.
 }
 ```
+
+**Response Format (Error(if you provide a non-existent id)(- Status Code: 404)):**
+
+```json
+{
+  "detail":"Not Found",
+}
+```
+
 
 
 ### Endpoint 3: Update a Person by ID
@@ -69,6 +86,21 @@ A Restful API that can perfom CRUD operations an a Person resource.
 {
   "id": 1,           // The ID of the updated person.
   "name": "New Name" // The updated name of the person.
+}
+```
+
+**Response Format (Error(if you provide a non-existent id)(- Status Code: 404)):**
+
+```json
+{
+  "detail":"Not Found",
+}
+```
+**Response Format (Error(if you provide an integer or any other datatype as a value for the mame field other than a string(alphabet))(- Status Code: 400)):**
+
+```json
+{
+  "name":"Only alphabetic characters are allowed in the name field.",
 }
 ```
 
@@ -100,6 +132,21 @@ A Restful API that can perfom CRUD operations an a Person resource.
 }
 ```
 
+**Response Format (Error(if you provide a non-existent id)(- Status Code: 404)):**
+
+```json
+{
+  "detail":"Not Found",
+}
+```
+**Response Format (Error(if you provide an integer or any other datatype as a value for the mame field other than a string(alphabet))(- Status Code: 400)):**
+
+```json
+{
+  "name":"Only alphabetic characters are allowed in the name field.",
+}
+```
+
 ### Endpoint 5: Delete a Person by ID
 
 - **Description:** This endpoint allows you to delete a person's information by their ID.
@@ -113,6 +160,14 @@ A Restful API that can perfom CRUD operations an a Person resource.
 **Response Format (Success - Status Code: 204):**
 
 The response for this endpoint does not include a JSON body. Upon successful deletion, it returns a status code of 204 (No Content).
+
+**Response Format (Error(if you provide a non-existent id)(- Status Code: 404)):**
+
+```json
+{
+  "detail":"Not Found",
+}
+```
 
 
 
