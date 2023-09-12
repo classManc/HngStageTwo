@@ -38,7 +38,7 @@ To access the Swagger UI, follow these steps:
 
 Make sure the app is running locally or deployed on Fly.io.
 
-Open a web browser and go to the URL http://localhost:8000/swagger/ if running locally, or https://late-wood-9200.fly.dev/swagger/. The Swagger UI should now be displayed, allowing you to interact with the API endpoints using a web interface.
+Open a web browser and go to the URL http://localhost:8000/swagger/ if running locally, or https://late-sun-8949.fly.dev/swagger. The Swagger UI should now be displayed, allowing you to interact with the API endpoints using a web interface.
 
 API Endpoints
 The following endpoints are available:
