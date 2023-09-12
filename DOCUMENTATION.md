@@ -1,7 +1,7 @@
-# HngStageTwo
-A Restful API that can perfom CRUD operations an a Person resource
+## HngStageTwo
+A Restful API that can perfom CRUD operations an a Person resource.
 
-#API Endpoints
+# API Endpoints
 
 ### Endpoint 1: Create a Person
 
@@ -14,6 +14,7 @@ A Restful API that can perfom CRUD operations an a Person resource
 {
   "name": "John Doe",  // Required field. Should be a string and cannot be blank.
 }
+```
 
 **Response Format (Success - Status Code: 201):**
 
@@ -22,6 +23,7 @@ A Restful API that can perfom CRUD operations an a Person resource
   "id": 1,
   "name": "John Doe",
 }
+```
 
 
 ### Endpoint 2: Get a Person by ID
@@ -41,7 +43,7 @@ A Restful API that can perfom CRUD operations an a Person resource
   "id": 1,           // The ID of the person.
   "name": "John Doe" // The name of the person.
 }
-
+```
 
 
 ### Endpoint 3: Update a Person by ID
@@ -60,11 +62,16 @@ A Restful API that can perfom CRUD operations an a Person resource
 {
   "name": "New Name"  // The new name for the person. Required field. Should be a string and cannot be blank.
 }
+```
+**Response Format (Success - Status Code: 200):**
 
+```json
 {
-  "id": 1,           // The ID of the  updated person.
+  "id": 1,           // The ID of the updated person.
   "name": "New Name" // The updated name of the person.
 }
+```
+
 
 
 ### Endpoint 4: Patch a Person by ID
@@ -83,11 +90,15 @@ A Restful API that can perfom CRUD operations an a Person resource
 {
   "name": "New Name"  // The new name for the person. Required field. Should be a string and cannot be blank.
 }
+```
+**Response Format (Success - Status Code: 200):**
 
+```json
 {
   "id": 1,           // The  ID of the updated person.
   "name": "New Name" // The updated name of the person.
 }
+```
 
 ### Endpoint 5: Delete a Person by ID
 
@@ -102,8 +113,6 @@ A Restful API that can perfom CRUD operations an a Person resource
 **Response Format (Success - Status Code: 204):**
 
 The response for this endpoint does not include a JSON body. Upon successful deletion, it returns a status code of 204 (No Content).
-
-
 
 
 
